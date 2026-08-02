@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Forecourt360" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorPrimaryDark">@color/brand_blue</item>
+    </style>
+</resources>
