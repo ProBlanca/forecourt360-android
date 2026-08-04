@@ -6,6 +6,14 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
+    <!-- Needed for the in-page "Take Photo" live camera (getUserMedia) and
+         for the native camera app the Choose File fallback can launch -
+         without this, WebView's onPermissionRequest can never actually
+         succeed even if the code grants it. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- required=false so the app still installs on a device with no
+         camera hardware (e.g. an office desktop/tablet used for admin). -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
